@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div class="header">
+        <div class="navbar">
+            <h1>TSCAP</h1>
+            <ul>
+                <li>
+                    <a href="/contact">Contact us</a>
+                </li>
+                <li>
+                    <a href="/about">About us</a>
+                </li>
+                <li>
+                    <a href="/products" id="current">Products</a>
+                </li>
+                <li>
+                    <a href="/">Home</a>
+                </li>
+            </ul>
+        </div>
+        
+    </div>
+    <div class="grid-container">
+        <% for(var i = 0; i < result.length; i++){ %>
+            <% var link = `/products/${result[i].seed_id}` %>
+        
+     <div class="grid-item">
+            <h3><%= result[i].seed_name %></h3>
+            <h4><%= result[i].seed_type %></h4>
+            <h5><%= result[i].seed_description %></h5>
+            <hr>
+            <p>Price: <%= result[i].seed_price %></p>
+            <a href="<%= link %>">Purchase!</a>
+            <% } %>
+        </div>
+    </div>
+</body>
+</html>

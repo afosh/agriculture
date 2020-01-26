@@ -1,0 +1,203 @@
+/*  ALL PAGES  */
+*{
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+}
+/*  only the body of the page associated with eh class  */
+body.eh{
+    background: url('../img/background.jpg');
+  
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+/*  global header  */
+.header{
+    width: 100%;
+    
+}
+
+/*  navbar  */
+.navbar ul li a#current{
+    color: #2c3e50;
+}
+.navbar h1{
+    float:left;
+    margin-left:25px;
+    margin-top:20px;
+    margin-bottom:25px;
+    font-family: montserrat Thin;
+    font-size: 28px;
+    color: #ecf0f1;
+}
+.navbar{
+    background: #2ecc71;
+    width: 100%;
+    height: 75px;
+}
+.navbar ul li a{
+    text-decoration: none;
+    display: inline;
+    float: right;
+    margin-right: 25px;
+    margin-left:25px;
+    margin-top:20px;
+    margin-bottom:25px;
+    font-family: montserrat Light;
+    font-size: 28px;
+    color: #ecf0f1; 
+}
+.navbar ul{
+    list-style: none;
+}
+.navbar ul li a:hover{
+    color:#1e2731;  
+}
+
+/*  end of navbar  */
+
+
+/*  containerZ  */
+.containerz{
+    width: 100%;
+    height: 100%;
+    font-family: montserrat Light;
+    color: white;
+}
+.containerz h3{
+    margin: 250px 0 40px 170px;
+
+}
+.containerz p{
+    margin: 0 0 20px 170px;
+}
+.containerz button{
+    font-family: monsterrat Regular;
+    font-weight: bold;
+    color: #ecf0f1;
+    font-size: 28px;
+    margin: 0 0 20px 180px;
+    background: none;
+    border: none;
+    width: 175px;
+    height: 75px;
+    border: 3px solid #1e2731;
+    border-radius: 80px;
+    transition: 1.2s ease-in;
+}
+.containerz button:hover{
+    background:aliceblue;
+    color: #1e2731;
+    transition: 1.2s ease-in;
+}
+
+
+/*  end of containerZ  */
+
+/*  ContainerA  */
+.containerA{
+    font-family: montserrat Regular;
+}
+.containerA h1{
+    text-align: center;
+    margin: 30px 0 30px 60px;
+}
+.containerA p{
+    margin-left: 25px;
+    line-height: 70px;
+}
+
+/*  End of containerA  */
+
+/*  ContaienrC  */
+.containerC{
+    font-family: montserrat Regular;
+    margin: 25px 0 0 60px;
+    text-align: center;
+}
+.containerC form input{
+    margin-top: 35px;
+    border: none;
+    border: 2px solid #2c3e50;
+    text-align: center;
+    border-radius: 40px;
+}
+.containerC form input[type=text], form input[type=email]{
+    width: 250px;
+    height: 45px;
+    display: inline-block;
+    margin: 35px auto;
+}
+.containerC form input[type=textarea]{
+    display: block;
+    margin: 20px auto;
+    width: 450px;
+    height: 100px;
+}
+.containerC form input[type=submit]{
+    width: 120px;
+    height: 35px;
+    cursor: pointer;
+    background: none;
+    font-size: 20px;
+    transition: 1s ease-out;
+}
+.containerC form input[type=submit]:hover{
+    transition: 1s ease-in;
+    background: #1e2731;
+    color: aliceblue;
+
+}
+/*  end of containerC  */
+.grid-container {
+    font-family: montserrat Thin;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 40px;
+  }
+
+  .grid-item {
+    color: white;
+    background-color: #2c3e50;
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+    width: 80%;
+    margin: 80px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  
+  }
+  
+.grid-item a{
+    text-decoration: none;
+    color: #2ecc71;
+  
+}
+.grid-item p{
+    font-size: 24px;
+}
+
+body.single{
+    background: #2c3e50;
+    color: #ecf0f1;
+
+}
+.connt{
+    margin: 10% auto;
+    width: 250px;
+    font-family: montserrat Thin;
+}
+.connt h2{
+
+}
+.containerz a{
+    font-family: montserrat Regular;
+    font-size: 24px;
+    text-decoration: none;
+    color: green;
+    text-shadow: 2px 1px 1px #1e2731;
+}
+.containerz a:hover{
+    font-family: montserrat Thin;
+    color: #2c3e50;
+    
+}

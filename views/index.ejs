@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Logo</title>
+</head>
+<body class="eh">
+    <div class="header">
+        <div class="navbar">
+            <h1>TSCAP</h1>
+            <ul>
+                <li>
+                    <a href="/contact">Contact us</a>
+                </li>
+                <li>
+                    <a href="/about">About us</a>
+                </li>
+                <li>
+                    <a href="/products">Products</a>
+                </li>
+                <li>
+                    <a href="/" id="current">Home</a>
+                </li>
+            </ul>
+        </div>
+        
+    </div>
+      <div class="containerz">
+          <% if(user == "blank" || buyer == "blank"){ %>
+    <h3>or you can login here if you have an account
+        <a href="/login">user</a>
+        OR as A 
+        <a href="/buyerlogin">buyer</a></h3>
+    <p>
+        register as a buyer <a href="/buyer">Click Here</a>
+        <br>
+        register as a user <a href="/register"> Click Here</a>
+
+        <button type="submit">Explore!</button>
+    </p>
+    <% }else{ %>
+        <h3 >WELCOME <%= user %>
+            <%= buyer %>
+        </h3 >
+            <% } %>
+    <h5>
+
+    </h5>
+    <h4>
+    </h4>
+</div>
+</body>
+</html>

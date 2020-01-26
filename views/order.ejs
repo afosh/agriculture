@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="/css/style.css">
+    
+    <title>Logo</title>
+    
+</head>
+<body class="single">
+    <div class="header">
+        <div class="navbar">
+            <h1>TSCAP</h1>
+            <ul>
+                <li>
+                    <a href="/contact">Contact us</a>
+                </li>
+                <li>
+                    <a href="/about">About us</a>
+                </li>
+                <li>
+                    <a href="/products">Products</a>
+                </li>
+                <li>
+                    <a href="/" id="current">Home</a>
+                </li>
+            </ul>
+        </div>
+        
+    </div>
+   
+    <div class="connts">
+        <div class="hallow">
+            <h2>Your Order Has Been Placed !</h2>
+            <h3>Seed ID: <%= data.id %></h3>
+            <h3>Seed Name: <%= data.name %></h3>
+            <h4>Price Paid: <%= data.total %></h4>
+            <h4>Delivery will be from 6-14 days.</h4>
+            <h4>click here to return to products list <a href="http://localhost:3000/products">Click Here!</a></h4>
+        </div>
+        </form>
+    </div>
+    <style>
+        .connts{
+            background-color: white;
+            width: 450px;
+            height: 450px;
+            margin: 100px auto auto auto;
+            color:#022147;
+
+            
+        }
+        .hallow{
+            text-align: center;
+
+        }
+        .hallow a{
+            text-decoration: none;
+            color: red;
+
+        }
+    </style>
+</body>
+</html>
