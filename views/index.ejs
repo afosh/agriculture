@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,10 +8,13 @@
     <link rel="stylesheet" href="css/style.css">
     <title>Logo</title>
 </head>
+
 <body class="eh">
     <div class="header">
         <div class="navbar">
-            <h1>TSCAP</h1>
+            <% if(user == "admin"){ %>
+            <h1> <a href="/admin">go to admin panel</a> </h1>
+            <% } %>
             <ul>
                 <li>
                     <a href="/contact">Contact us</a>
@@ -26,31 +30,34 @@
                 </li>
             </ul>
         </div>
-        
+
     </div>
-      <div class="containerz">
-          <% if(user == "blank" || buyer == "blank"){ %>
-    <h3>or you can login here if you have an account
-        <a href="/login">user</a>
-        OR as A 
-        <a href="/buyerlogin">buyer</a></h3>
-    <p>
-        register as a buyer <a href="/buyer">Click Here</a>
-        <br>
-        register as a user <a href="/register"> Click Here</a>
+    <div class="containerz">
+        <% if(user == "blank" || buyer == "blank"){ %>
+        <h3>or you can login here if you have an account
+            <a href="/login">user</a>
+            OR as A
+            <a href="/buyerlogin">buyer</a></h3>
+        <p>
+            register as a buyer <a href="/buyer">Click Here</a>
+            <br>
+            register as a user <a href="/register"> Click Here</a>
 
-        <button type="submit">Explore!</button>
-    </p>
-    <% }else{ %>
-        <h3 >WELCOME <%= user %>
+            <button type="submit">Explore!</button>
+        </p>
+        <% }else{ %>
+        <h3>WELCOME <%= user %>
             <%= buyer %>
-        </h3 >
-            <% } %>
-    <h5>
+        </h3>
+        <a href="/logout" style="margin-right:150px;">LOGOUT</a>
+        <% } %>
+        <h5>
 
-    </h5>
-    <h4>
-    </h4>
-</div>
+        </h5>
+        <h4>
+        </h4>
+
+    </div>
 </body>
+
 </html>

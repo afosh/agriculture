@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <link href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet"
+        id="bootstrap-css">
+    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <!------ Include the above in your HEAD tag ---------->
+
+    <link href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet"
+        id="bootstrap-css">
+    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <!-- Include the above in your HEAD tag -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="bg-dark">
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="dbox dbox--color-1">
+                    <div class="dbox__icon">
+                        <i class="glyphicon glyphicon-cloud"></i>
+                    </div>
+                    <div class="dbox__body">
+                        <span class="dbox__count"><%= data.seed %></span>
+                        <span class="dbox__title">Number of Products</span>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="dbox dbox--color-2">
+                    <div class="dbox__icon">
+                        <i class="glyphicon glyphicon-download"></i>
+                    </div>
+                    <div class="dbox__body">
+                        <span class="dbox__count"><%= data.orders %></span>
+                        <span class="dbox__title">number of Orders</span>
+                    </div>
+
+                </div>
+                <h1 class="text-left">
+                    <a href="/add" class="text-success">Add New Product</a>
+                </h1>
+            </div>
+            <div class="col-md-4">
+                <div class="dbox dbox--color-3">
+                    <div class="dbox__icon">
+                        <i class="glyphicon glyphicon-heart"></i>
+                    </div>
+                    <div class="dbox__body">
+                        <span class="dbox__count"><%= data.users %></span>
+                        <span class="dbox__title">number of current users</span>
+                    </div>
+
+                </div>
+                <h1 class="text-left">
+                    <a href="/edit" class="text-success ader">Edit a Product</a>
+                </h1>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="/css/style.css">
-    
+
     <title>Logo</title>
-    
+
 </head>
+
 <body class="single">
     <div class="header">
         <div class="navbar">
@@ -28,15 +30,19 @@
                 </li>
             </ul>
         </div>
-        
+
     </div>
-   
+
     <div class="connt">
-        <h2>product number: <%= result[0].seed_id %></h2>
-        <h3>product price : <%= result[0].seed_price %> </h3>
-        
-            <a href="<%= har %>">purchase it</a>
+        <form action="get">
+            <h2>product number: <%= result[0].seed_id %></h2>
+            <h3>product price : <%= result[0].seed_price %> </h3>
+
+            <a href="<%= har1 %>" style="color:red;">purchase it with cash</a>
+
+            <a href="<%= har %>" style="color:red;">purchase it with bank</a>
         </form>
     </div>
 </body>
+
 </html>
